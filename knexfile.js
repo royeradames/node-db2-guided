@@ -7,7 +7,10 @@ module.exports = {
     connection: {
       filename: './data/produce.db3'// from root folder
     },
-  useNullAsDefault: true //need for sqLite
+  useNullAsDefault: true, //need for sqLite
+    migrations: {
+      directory:'./data/migrations'
+    }
 },
 
   staging: {
